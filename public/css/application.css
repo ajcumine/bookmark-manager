@@ -1,32 +1,26 @@
-body {
-  color: white;
-  font-family: Helvetica, Arial, Sans-serif;
-  background-image: url(/images/use_your_illusion.png)
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a.button {
-  display: inline-block;
-  width: 80px;
-  background-color: red;
-  border: 2px solid white;
-  color: white;
+body {
+  color: #f7f7f7;
+  font-family: Helvetica, Arial, Sans-serif;
+  background-image: url(/images/use_your_illusion.png);
+}
+
+a {
   text-decoration: none;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-shadow: 0 0 2px rgba(0,0,0,0.4);
+  color: #f7f7f7;
 }
 
 header {
+  background-color: rgba(0,0,0,0.4);
   height: 40px;
-  background-color: #202020;
-  color: white;
   font-size: large;
   display: flex;
   padding: 5px 10px;
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid #a91d2a;
 }
 
 header > * {
@@ -38,30 +32,66 @@ header #logo {
   margin-right: 20px;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
-}
-
 header #user-links {
   flex: 1;
   -webkit-flex: 1;
   text-align: right;
 }
 
-a.button.highlighted {
-  background-color: #b77843;
+header #user-links > * {
+  display: inline-block;
+}
 
+header #user-links #welcome-message {
+  font-size: 14px;
+}
+
+.button.highlighted {
+  background-color: #a91d2a;
+}
+
+.button {
+  display: inline-block;
+  width: 110px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #f7f7f7;
+  background-color: #b77843;
+  border: 2px solid #f7f7f7;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+#notice {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(67,183,120,0.75);
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  color: white;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.3);
+  margin: 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  padding: 10px;
 }
 
 .link {
-  background-color: #EEE
+  background-color: #202020;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   margin: 10px inherit;
   padding: 15px 10px;
 }
 
 .link a.title {
+  color: #a91d2a;
   letter-spacing: 1px;
 }
 
@@ -72,4 +102,42 @@ a.button.highlighted {
 .link .source {
   float: right;
   font-size: 12px;
+}
+
+footer {
+  display: flex;
+  background-color: rgba(0,0,0,0.2);
+}
+
+footer > * {
+  margin: auto inherit;
+}
+
+footer img {
+  vertical-align: top;
+}
+
+footer #technologies {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+footer p {
+  padding: 5px 25px;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -70px;
+}
+
+.footer, .push {
+  height: 70px;
 }
