@@ -21,9 +21,9 @@ a.button {
 
 header {
   height: 40px;
-  background-color: black;
+  background-color: #202020;
   color: white;
-  font-size: x-large;
+  font-size: large;
   display: flex;
   padding: 5px 10px;
   border-bottom: 2px solid red;
@@ -35,10 +35,21 @@ header > * {
 
 header #logo {
   display: flex;
+  margin-right: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 header #user-links {
   flex: 1;
   -webkit-flex: 1;
   text-align: right;
+}
+
+a.button.highlighted {
+  background-color: #b77843;
+
 }
