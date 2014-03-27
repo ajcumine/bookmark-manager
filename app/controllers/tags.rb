@@ -1,5 +1,6 @@
-get '/tags/:text' do
-  tag = Tag.first(:text => params[:text])
-  @links = tag ? tag.links : []
+get '/tags/:text' do |tag_text|
+  tag = Tag.first(:text => tag_text)
+  @tags = [tag]
+  @links = Link.tagged_as(tag)
   erb :index
-end
+end 

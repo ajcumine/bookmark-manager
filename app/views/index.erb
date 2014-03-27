@@ -1,3 +1,8 @@
+<ol id='tags'>Tags:
+  <% @tags.each do |tag| %>
+    <li class='tag'><%= tag.text %></li>
+  <% end %>
+</ol>
 <ul id='links'>
   <% @links.each do |link| %>
     <%= partial :link, :locals => {:link => link} %>
