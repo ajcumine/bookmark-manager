@@ -1,8 +1,8 @@
 <header>
   <div id='logo'>
-    <a href='/'>Bookmark Manager</a>
+    <a href='/'>BOOKMARK MANAGER</a>
   </div>
-  <a href='/links/new' class='button'>Add link</a>
+  <a href='/links/new' class='button'>ADD LINK</a>
   <div id='user-links'>
     <% if current_user %>
       <span id='welcome-message'>
@@ -10,11 +10,11 @@
       </span>
       <form id 'sign-out' method='post' action='/sessions'>
         <input type='hidden' name='_method' value='delete'>
-        <input type='submit' value='Sign out' class='button'>
+        <input type='submit' value='SIGN OUT' class='button' >
       </form>
     <% else %>
-      <a href='/users/new' id='sign-up' class='button'>Sign up</a>
-      <a href='sessions/new' id='sign-in' class='button'>Sign in</a>
+      <a href='/users/new' id='sign-up' class='button'>SIGN UP</a>
+      <a href='/sessions/new' id='sign-in' class='button'>SIGN IN</a>
     <% end %>
   </div>
 </header>
