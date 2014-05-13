@@ -1,6 +1,10 @@
-#Bookmark Manager
+###Bookmark Manager
 
-## Week 6 Project @MakersAcademy
+The week 6 project @MakersAcademy.
+
+![image](https://dchtm6r471mui.cloudfront.net/hackpad.com_HrmLraJclly_p.52567_1380216944437_Screen%20Shot%202013-09-26%20at%2018.33.15.png)
+ 
+#### Specification 
 
 This week's project is a bookmark manager. The goal is to expose you to the following aspects of web development, in addition to what we've studied before:
 
