@@ -26,3 +26,14 @@ Add tags to the links
 Filter links by a tag
 
 This is the basic view of the website. This tutorial will discuss how to build it, step by step. At the end of the section there are multiple exercises challenging you to extend the functionality of this website. 
+
+#### Technologies Used:
+
+* Ruby
+* Rspec
+* Sinatra
+* Capybara
+* CSS
+* HTML
+* PostgresQL
+* Datamapper
